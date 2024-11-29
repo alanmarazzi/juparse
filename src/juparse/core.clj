@@ -58,7 +58,7 @@
 (def clean-imports
   (comp
    (map s/trim-newline)
-   (map #(s/split % #" "))))
+   (map #(s/split % #" |,"))))
 
 (def package-name
   (map second))
